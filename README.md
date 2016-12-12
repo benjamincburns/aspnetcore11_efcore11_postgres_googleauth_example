@@ -13,6 +13,6 @@ To build this project you need to download and install the .NET core 1.1 SDK. At
 
 To create database, modify the database connection string in `appsettings.json`, then on the command line navigate to `src/ExampleProject` and run `dotnet ef update`.
 
-To enable Google Authentication support, generate Google+ API server-side credentials, and add them to the user-secrets store by running `dotnet user-secrets set Authentication:Google:ClientId <yourId>`, followed by `user-secret set Authentication:Google:ClientSecret <yourSecret>`. More information on this can be found in this [article](http://ruimourato.com/2016/02/12/using-google-auth-middleware-aspnetcore.html), however be advised that the `user-secret`, `dnvm`, and `dnu` commands are now deprecated in favour of their `dotnet` counterparts.
+To enable Google Authentication support, generate Google+ API server-side credentials, and add them to the user-secrets store by running `dotnet user-secrets set Authentication:Google:ClientId <yourId>`, followed by `dotnet user-secrets set Authentication:Google:ClientSecret <yourSecret>`. More information on this can be found in this [article](http://ruimourato.com/2016/02/12/using-google-auth-middleware-aspnetcore.html), however be advised that the `user-secret`, `dnvm`, and `dnu` commands are now deprecated in favour of their `dotnet` counterparts.
 
 If you run into other issues getting this running on your machine, please raise an issue and I'll update the project or this readme accordingly.
